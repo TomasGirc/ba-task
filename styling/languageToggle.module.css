@@ -1,0 +1,51 @@
+/* Base size variable (height of toggle) */
+:root {
+  --toggle-size: 24px;
+}
+
+.languageSwitch{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggleWrapper {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle {
+  position: relative;
+  width: calc(var(--toggle-size) * 2);   
+  height: var(--toggle-size);
+  background-color: #ccc;
+  border-radius: calc(var(--toggle-size) / 2); 
+  transition: background-color 0.3s ease;
+}
+
+.toggleKnob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(var(--toggle-size) - 4px);   
+  height: calc(var(--toggle-size) - 4px);
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--toggle-size) / 2); 
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.toggleKnobOn {
+  transform: translateX(calc(var(--toggle-size))); 
+}
+
+.label {
+  margin-left: 8px;
+  font-size: calc(var(--toggle-size) / 2 + 2px);
+  user-select: none;
+}
