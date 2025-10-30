@@ -33,19 +33,6 @@
   gap: 48px;
 }
 
-/* languageToggle.module.css */
-
-.languageSwitch {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-
-
-
-
-
 .intro {
   display: flex;
   flex-direction: column;
