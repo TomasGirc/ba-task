@@ -1,4 +1,6 @@
-UI komponentai - Material - UI
-Formų validacija - react hook form
-Validacija - zod
-Testavimas -  Jest
+# Project Setup
+
+## Run the Project
+
+```bash
+npm run dev
