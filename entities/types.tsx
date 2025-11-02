@@ -10,7 +10,6 @@ export type ibanValidationType = {
 
 export interface Account {
   iban: string;
-  name: string;
   balance: number;
 }
 
